@@ -318,6 +318,9 @@ section {
   display: flex;
   flex-direction: column;
 }
+.details-container p{
+  margin-bottom: 20px;
+}
 
 .section-container {
   gap: 4rem;
@@ -388,8 +391,9 @@ article .icon {
 
 .project-img {
   width: 90%;
-  height: 150px;
+  height: 250px;
   object-fit: cover;
+  border-radius: 2rem;
 }
 
 

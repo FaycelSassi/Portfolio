@@ -16,7 +16,8 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Data Science Projects</a></li>
+          <li><a href="#netprojects" onclick="toggleMenu()">.NET Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -32,7 +33,8 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Data Science Projects</a></li>
+          <li><a href="#netprojects" onclick="toggleMenu()">.NET Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -44,7 +46,7 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Faycel Sassi</h1>
-        <p class="section__text__p2">Data Scientist/Web and software Developer</p>
+        <p class="section__text__p2">Data Scientist/.NET Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -247,13 +249,13 @@ I am a dynamic IT professional with a Master's degree in Data Science and Softwa
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <h1 class="title">Data Science Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/project-1.jpg"
                 alt="Project 1"
                 class="project-img"
               />
@@ -282,23 +284,22 @@ I am a dynamic IT professional with a Master's degree in Data Science and Softwa
             </div>
             
           </div>
+          
+          
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/project-1.jpg"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Elife</h2>
+            <h2 class="experience-sub-title project-title">Tayara</h2>
             <p>
-            • Designed and crafted a comprehensive webbased training administration solution using
-            Symfony.<br>
-            • Integrated OAuth 2.0 authentication with
-            Gmail for robust user logins.<br>
-            • Developed role-based access control,
-            enhancing user management for teachers
-            and administrators.
+            • Leveraged requests and BeautifulSoup libraries for effective web scraping.<br>
+            • Analyzed scraped data, conducted exploratory data analysis, and generated insightful visualizations using Power BI<br>
+            
+
             </p>
             <div class="btn-container">
               <button
@@ -312,7 +313,44 @@ I am a dynamic IT professional with a Master's degree in Data Science and Softwa
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/project-1.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">VenteVoitue</h2>
+            <p>
+            • Developed a WPF project integrated with MySQL for streamlined data management.<br>
+• Implemented intuitive user interfaces catering to diverse user roles.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/FaycelSassi/VenteVoitue'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#netprojects'"
+      />
+    </section>
+    <section id="netprojects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">.NET Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpg"
                 alt="Project 2"
                 class="project-img"
               />
@@ -335,18 +373,18 @@ I am a dynamic IT professional with a Master's degree in Data Science and Softwa
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/project-2.jpg"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Tayara</h2>
+            <h2 class="experience-sub-title project-title">Resto</h2>
             <p>
-            • Leveraged requests and BeautifulSoup libraries for effective web scraping.<br>
-            • Analyzed scraped data, conducted exploratory data analysis, and generated insightful visualizations using
-Power BI<br>
-            
-
+            • Create a menu class that stores the name, price, and description of each menu item.<br>
+            • Create a order class that stores the customer name, table number, and a list of menu items ordered.<br>
+            • Create a restaurant class that stores the name, address, and a list of orders.<br>
+            • Use console input and output to interact with the user and display the menu, take orders, and print receipts.<br>
+            • Use file input and output to save and load the menu and orders data.
             </p>
             <div class="btn-container">
               <button
@@ -357,10 +395,11 @@ Power BI<br>
               </button>
             </div>
           </div>
+          
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/project-2.jpg"
                 alt="Project 2"
                 class="project-img"
               />
@@ -368,7 +407,9 @@ Power BI<br>
             <h2 class="experience-sub-title project-title">VenteVoitue</h2>
             <p>
             • Developed a WPF project integrated with MySQL for streamlined data management.<br>
-• Implemented intuitive user interfaces catering to diverse user roles.
+            • Implemented intuitive user interfaces catering to diverse user roles.<br>
+            • Implemented multiple forms including HomeForm, SignInForm, BuyerForm, SellerForm and AdminForm to provide a user-friendly and intuitive interface for various user roles.<br>
+            • Implemented Use of the NET framework to manage form events, user input and validation to ensure data integrity and application reliability.<br>
             </p>
             <div class="btn-container">
               <button
@@ -411,7 +452,8 @@ Power BI<br>
             <ul class="nav-links">
               <li><a href="#about">About</a></li>
               <li><a href="#experience">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
+              <li><a href="#projects" onclick="toggleMenu()">Data Science Projects</a></li>
+          <li><a href="#netprojects" onclick="toggleMenu()">.NET Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
